@@ -1,18 +1,38 @@
-USE employee_db;
+\USE employeesdb;
 
-INSERT INTO department (name) VALUES ("Management");
-INSERT INTO department (name) VALUES ("Sales");
-INSERT INTO department (name) VALUES ("Accounts");
-INSERT INTO department (name) VALUES ("Warehouse");
+INSERT INTO department (name)
+VALUES ("Legal");
+INSERT INTO department (name)
+VALUES ("Sales");
+INSERT INTO department (name)
+VALUES ("Engineering");
+INSERT INTO department (name)
+VALUES ("Finance");
 
-INSERT INTO role (title, salary, department_id) VALUES ("Warehouse Forman", 70, 3);
-INSERT INTO role (title, salary, department_id) VALUES ("Senior Sales Rep", 50, 2);
-INSERT INTO role (title, salary, department_id) VALUES ("Accountant", 50, 2);
-INSERT INTO role (title, salary, department_id) VALUES ("Assistant Regional Manager", 100, 1);
-INSERT INTO role (title, salary, department_id) VALUES ("Regional Manager", 100, 4);
+INSERT INTO role_id (title, salary, department_id)
+VALUES ("Head of Sales", 200000, 1);
+INSERT INTO role_id (title, salary, department_id)
+VALUES ("Head Engineer", 250000, 2);
+INSERT INTO role_id (title, salary, department_id)
+VALUES ("Engineer for Software ", 220000, 3);
+INSERT INTO role_id (title, salary, department_id)
+VALUES ("Accounting", 225000, 4);
+INSERT INTO role_id (title, salary, department_id)
+VALUES ("Head Legal Team", 350000, 5);
 
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Glynn", "Taffy", 2);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Tim", "Canterbury", 1);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Keith", "Bishop", 3);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Gareth", "Keenan", 4);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("David", "Brent", 5);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Dane", "Joe", 1, 3);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Rorah", "Nios", 2, 1);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Mate", "Kellor", 3, 1);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Bhiv", "Setts", 4, 3);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Heen", "Lurst", 3, 1);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("lary", "Geer", 2, 1);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Com", "Truise", 4, 2);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("Mike", "Michaels", 1, 2);
