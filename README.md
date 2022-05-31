@@ -6,6 +6,8 @@ Commandline Application to track employees within a database. Add, remove, searc
 
   ## Visualization
 
+![employeeTracker](https://user-images.githubusercontent.com/60993926/171270563-98083037-616f-4424-b1a9-5c5edb644332.png)
+
 
   ## Technology Used
       -Javascript
